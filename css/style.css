@@ -59,6 +59,20 @@ body, html {
   background-position: center;
   animation: aGlow 2s ease-in-out infinite;
 }
+.showcase__header {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+  top: 100px;
+  font-family: apex-st, sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.2cm;
+  color: rgba(255, 255, 255, 0.85);
+}
+.showcase__header span {
+  color: var(--accent);
+}
 
 /* ANIMATIONS */
 @keyframes aLight {
