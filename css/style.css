@@ -1,0 +1,29 @@
+/* USER STYLES */
+body, html {
+  height: 100%;
+}
+
+.showcase {
+  background-color: #000;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+.showcase::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  box-shadow: inset 0 0 500px #000;
+}
+.showcase__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.48;
+}
