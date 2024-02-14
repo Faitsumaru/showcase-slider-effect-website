@@ -1,6 +1,7 @@
 /* USER VARIABLES SECTION */
 :root {
-	--accent: #CC8869;
+	--accent: #cd3332;
+	--txtshadow: rgb(110, 10, 10) 0 0 15px;
 	--text: #333;
 	--regular-text: 16px;
 	--lineheight: 1.65;

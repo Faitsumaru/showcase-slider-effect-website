@@ -73,6 +73,7 @@ body, html {
         font-size: 50px;
         letter-spacing: .2cm;
         color: rgba(255, 255, 255, .85);
+        text-shadow: var(--txtshadow);
 
         span {
             color: var(--accent);
@@ -84,12 +85,38 @@ body, html {
             position: relative;
             height: calc(100vh - var(--padding) * 2);
             opacity: .3;
-            transform: scale(.75);
+            transform: scale(.6);
             transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
             
             &.swiper-slide-active {
                 opacity: .8;
-                transform: scale(.95);
+                transform: scale(.8);
+
+                p {
+                   color: var(--accent); 
+                   font-size: 50px;
+                }
+            }
+
+            &::after {
+                content: '';
+                width: 300px;
+                height: 0;
+                position: absolute;
+                box-shadow: 10px 10px 60px 15px #010101,  -20px -20px 60px 15px #010101;
+                bottom: -20px;
+                left: calc(50% - 150px);
+            }
+
+            p {
+                position: absolute;
+                bottom: -200px;
+                width: 100%;
+                text-align: center;
+                font-family: apex-st, sans-serif;
+                font-size: 40px;
+                letter-spacing: .1cm;
+                text-shadow: var(--txtshadow);
             }
         }
 
@@ -102,7 +129,7 @@ body, html {
         }
 
         &-image {
-            top: 75px;
+            top: 50px;
             position: absolute;
             height: 100%;
             width: 100%;
