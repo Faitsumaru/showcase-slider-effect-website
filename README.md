@@ -6,6 +6,22 @@ Awesome website w/ smooth showcase carousel animation effects!
 ​
 > version: Feb 2024, created by Gleb 'Faitsuma' Kiryakov
 
+## Preshow
+
+<div align="center">
+  <h3 align="left"><u>Large size display mode:</u></h3>
+  <a href="https://faitsumaru.github.io/showcase-slider-effect-website/">
+    <img src="images/preshowXL.jpg" alt="preshow large img">
+  </a>
+
+  <br>
+
+  <h3 align="left"><u>Small size display mode:</u></h3>
+  <a href="https://faitsumaru.github.io/showcase-slider-effect-website/">
+    <img src="images/preshowXS.jpg" alt="preshow small img">
+  </a>
+</div>
+
 ## Documentation
 * Photoshop guide: https://helpx.adobe.com/photoshop/user-guide.html;
 * JS docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript;
