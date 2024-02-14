@@ -8,7 +8,6 @@ body, html {
   height: 100%;
   position: relative;
   color: #fff;
-  overflow: hidden;
 }
 .showcase::before {
   content: "";
@@ -63,15 +62,42 @@ body, html {
   position: absolute;
   text-align: center;
   width: 100%;
-  z-index: 3;
+  z-index: 1;
   top: 100px;
   font-family: apex-st, sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 0.2cm;
   color: rgba(255, 255, 255, 0.85);
 }
 .showcase__header span {
   color: var(--accent);
+}
+.showcase__carousel-item {
+  position: relative;
+  height: calc(100vh - var(--padding) * 2);
+  opacity: 0.3;
+  transform: scale(0.75);
+  transition: opacity 1.8s var(--transition), transform 1.8s var(--transition);
+}
+.showcase__carousel-item.swiper-slide-active {
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+.showcase__carousel-image-wrapper > * {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  perspective: 150px;
+  transform: preserve-3d;
+}
+.showcase__carousel-image {
+  top: 75px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* ANIMATIONS */
