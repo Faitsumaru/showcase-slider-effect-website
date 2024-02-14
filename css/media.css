@@ -1,0 +1,83 @@
+/* === DESKTOP FIRST === */
+
+/* xl <= Extra extra large (xxl) */
+@media (max-width : 1400px) {
+
+	.showcase__content {
+		max-width: 1200px;
+		margin: auto;
+	}
+
+}
+
+/* lg <= Extra large (xl) */
+@media (max-width : 1200px) {
+
+}
+
+/* md <= Large (lg) */
+@media (max-width : 992px) {
+
+}
+
+/* sm <= Medium (md) */
+@media (max-width : 768px) {
+    .showcase__header {
+        line-height: var(--lineheight);
+    }
+
+    .showcase__header, .showcase__carousel-item p {
+        font-size: 2.3em !important;
+    }
+
+    .showcase__carousel-item::after {
+        content: '';
+        bottom: 220px;
+        box-shadow: 20px 20px 60px 10px #010101,  -20px -20px 60px 10px #010101;
+    }
+}
+
+/* xs <= Small (sm) */
+@media (max-width : 576px) {
+    .showcase__carousel-item::after {
+        content: '';
+        bottom: 100px;
+    }
+}
+
+
+/* === MOBILE FIRST === */
+
+/* Custom (xs) */
+@media (min-width : 0) {
+
+}
+
+/* Small (sm) */
+@media (min-width : 576px) {
+
+}
+
+/* Medium (md) */
+@media (min-width : 768px) {
+
+}
+
+/* Large (lg) */
+@media (min-width : 992px) {
+
+}
+
+/* Extra large (xl) */
+@media (min-width : 1200px) {
+	.text {
+		font-size: 18px;
+	}
+}
+
+/* Extra extra large (xxl) */
+@media (min-width : 1400px) {
+	.text {
+		font-size: 22px;
+	}
+}
