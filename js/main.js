@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         speed: 1800,
         centeredSlides: true,
-
+        navigation: {
+            prevEl: '.showcase__navigation-prev',
+            nextEl: '.showcase__navigation-next'
+        }
     })
 
 

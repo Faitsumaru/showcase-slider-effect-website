@@ -35,6 +35,10 @@
         bottom: 220px;
         box-shadow: 20px 20px 60px 10px #010101,  -20px -20px 60px 10px #010101;
     }
+
+    .showcase__navigation img {
+        width: 40px;
+    }
 }
 
 /* xs <= Small (sm) */
@@ -42,6 +46,10 @@
     .showcase__carousel-item::after {
         content: '';
         bottom: 100px;
+    }
+
+    .showcase__navigation img {
+        width: 30px;
     }
 }
 

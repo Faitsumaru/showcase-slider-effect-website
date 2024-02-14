@@ -139,6 +139,45 @@ body, html {
   animation: aRightHeroSide 2s ease-in-out infinite;
   animation-direction: alternate;
 }
+.showcase__navigation {
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.showcase__navigation-prev, .showcase__navigation-next {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  outline: none;
+  cursor: pointer;
+}
+.showcase__navigation-prev img, .showcase__navigation-next img {
+  position: absolute;
+  top: 50%;
+  opacity: 0;
+  transition: opacity 0.75s ease-out;
+}
+.showcase__navigation-prev:hover img, .showcase__navigation-next:hover img {
+  opacity: 0.65;
+}
+.showcase__navigation-prev img {
+  left: 10%;
+  transform: rotate(-90deg);
+}
+.showcase__navigation-next {
+  right: 0;
+}
+.showcase__navigation-next img {
+  right: 10%;
+  transform: rotate(90deg);
+}
+.showcase__navigation > *.swiper-button-disabled {
+  display: none;
+}
 
 /* ANIMATIONS */
 @keyframes aLight {

@@ -158,6 +158,52 @@ body, html {
             }
         }
     }
+
+    &__navigation {
+        overflow: hidden;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        &-prev, &-next {
+            position: absolute;
+            height: 100%;
+            width: 40%;
+            outline: none;
+            cursor: pointer;
+
+            & img {
+                position: absolute;
+                top: 50%;
+                opacity: 0;
+                transition: opacity .75s ease-out;
+            }
+            &:hover img {
+                opacity: .65;
+            }
+        }
+        &-prev {
+            & img {
+                left: 10%;
+                transform: rotate(-90deg);
+            }
+        }
+        &-next {
+            right: 0;
+
+            & img {
+                right: 10%;
+                transform: rotate(90deg);
+            }
+        }
+
+        & > *.swiper-button-disabled {
+            display: none;
+        }
+    }
 }
 
 
