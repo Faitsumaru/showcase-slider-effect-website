@@ -23,7 +23,13 @@
 @font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
 @font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
 @font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
-@font-face { src: url("../fonts/apex-regular.woff2") format("woff2"); font-family: "apex-st"; font-weight: 700; font-style: italic; }
+@font-face { 
+	src: url("../fonts/apex-regular.woff2") format("woff2"),
+	url("../fonts/apex-regular.woff") format("woff"),
+	url("../fonts/apex-regular.otf") format("truetype"); 
+	font-family: "apex-st"; 
+	font-weight: 700; 
+	font-style: italic; }
 
 
 /* GENERAL CSS SETTINGS */

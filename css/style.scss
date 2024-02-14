@@ -1,6 +1,7 @@
 /* USER STYLES */
 body, html {
 	height: 100%;
+    font-family: 'apex-st', 'roboto-st';
 }
 
 .showcase {
@@ -8,7 +9,8 @@ body, html {
 	height: 100%;
 	position: relative;
 	color: #fff;
-	// overflow: hidden;
+    text-transform: uppercase;
+	overflow: hidden;
 
     &::before {
         content: '';
