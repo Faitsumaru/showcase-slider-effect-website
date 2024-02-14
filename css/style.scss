@@ -157,6 +157,10 @@ body, html {
                 animation-direction: alternate;
             }
         }
+
+        .swiper-wrapper {
+            transition: var(--transition)
+        }
     }
 
     &__navigation {

@@ -139,6 +139,9 @@ body, html {
   animation: aRightHeroSide 2s ease-in-out infinite;
   animation-direction: alternate;
 }
+.showcase__carousel .swiper-wrapper {
+  transition: var(--transition);
+}
 .showcase__navigation {
   overflow: hidden;
   position: absolute;
